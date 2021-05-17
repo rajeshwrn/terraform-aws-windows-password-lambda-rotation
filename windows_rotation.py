@@ -60,7 +60,7 @@ def create_secret(service_client, arn, token):
         print('sleepping')
         time.sleep(60)
         response = client.get_parameter(
-            Name="/EC2Rescue/Passwords/" + instance,
+            Name="/EC2Rescue/Passwords/"+instance,
             WithDecryption=True
         )
         print(response)
@@ -74,7 +74,7 @@ def create_secret(service_client, arn, token):
         # the above send_command is asyncronous
         print('Delete parameter')
         response = client.delete_parameter(
-            Name="/EC2Rescue/Passwords/" + instance,
+            Name="/EC2Rescue/Passwords/"+instance,
         )
         time.sleep(20)
         return True
