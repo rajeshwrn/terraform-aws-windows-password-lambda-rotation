@@ -31,6 +31,16 @@ Create one lambda function for each region you are working on. Using this code
 module "windows-password-lambda-rotation" {
   source  = "github.com/rajeshwrn/terraform-aws-windows-password-lambda-rotation/"
   prefix  = "raj"
+  application_id   = "application_id"
+  application_name = "application_name"
+  aws_region       = "aws_region"
+  bu               = "bu"
+  core_id          = "core_id"
+  created_by       = "created_by"
+  dept_id          = "dept_id"
+  env              = "env"
+  profile          = "profile"
+  project_id       = "project_id"
 }
 ```
 * Before applying the rotation try to run a simple command like this to the machine, to see if ssm commands can run, check the output in the run command history
@@ -47,6 +57,16 @@ module "windows-password-rotation-secret-manager" {
   secret_name_prefix = "vault_"
   instanceid = "i-xxxxxx"
   rotation_lambda_arn = "${module.windows-password-lambda-rotation.lambda_arn}"
+  application_id   = "application_id"
+  application_name = "application_name"
+  aws_region       = "aws_region"
+  bu               = "bu"
+  core_id          = "core_id"
+  created_by       = "created_by"
+  dept_id          = "dept_id"
+  env              = "env"
+  profile          = "profile"
+  project_id       = "project_id"
 }
 ``` 
 * You can rotate the password manually using the rotation button or wait the numbers of days defined
