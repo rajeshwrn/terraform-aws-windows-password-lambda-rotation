@@ -1,6 +1,11 @@
 # Terraform AWS EC2 Windows Password Rotation using Lambda/SSM and secret Manager
 When you create an EC2 windows the password will remain the same for the whole life of the machine. It can be rotated automatically with this module
 
+## Requirement
+* AWS Provider - 3.40
+* Python - 3.9
+* Terraform - 0.15.3
+
 This module is a dependencie of https://github.com/rajeshwrn/terraform-aws-windows-password-rotation-secret-manager/
 
 Thanks  <a href="https://github.com/giuseppeborgese">@giuseppeborgese</a>
