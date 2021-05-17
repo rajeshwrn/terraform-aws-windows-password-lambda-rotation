@@ -3,8 +3,9 @@ When you create an EC2 windows the password will remain the same for the whole l
 
 This module is a dependencie of https://github.com/rajeshwrn/terraform-aws-windows-password-rotation-secret-manager/
 
-Thanks @giuseppeborgese
-It is the enhanced version of giuseppeborgese/terraform-aws-windows-password-rotation-secret-manager and giuseppeborgese/terraform-aws-windows-password-lambda-rotation
+Thanks  <a href="https://github.com/giuseppeborgese">@giuseppeborgese</a>
+
+It is the enhanced version of <a href="https://github.com/giuseppeborgese/terraform-aws-windows-password-rotation-secret-manager">giuseppeborgese/terraform-aws-windows-password-rotation-secret-manager</a> and <a href="https://github.com/giuseppeborgese/terraform-aws-windows-password-lambda-rotation">giuseppeborgese/terraform-aws-windows-password-lambda-rotation</a>
 
 ## Prerequisites
 
