@@ -52,7 +52,7 @@ so you can see all the details and don’t miss anything. There is also a troubl
 # Rotation steps what happens behind the scene:
 This image describes all the steps every time there is a rotation manual or automatic
 
-![solution](https://raw.githubusercontent.com/rajeshwrn/terraform-aws-windows-password-rotation-secret-manager/master/solution.png)
+![solution](https://raw.githubusercontent.com/rajeshwrn/terraform-aws-windows-password-rotation-secret-manager/main/solution.png)
 
 Let's read in details:
 
